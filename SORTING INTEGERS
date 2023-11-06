@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void main()
+{
+    int myArray[10];
+    int index = 0;
+
+    for (index = 0; index < 10; index++)
+    {
+        printf("Enter the number for index %d: ", index);
+        scanf("%d", &myArray[index]);
+    }
+
+    printf("\nThe values of the Array are: \n");
+    for (index = 0; index < 10; index++)
+    {
+        if (index < 9)
+            printf("%d, ", myArray[index]);
+        else
+            printf("%d;", myArray[index]);
+    }
+}
